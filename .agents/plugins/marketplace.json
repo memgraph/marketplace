@@ -1,0 +1,33 @@
+{
+  "name": "memgraph",
+  "interface": {
+    "displayName": "Memgraph"
+  },
+  "plugins": [
+    {
+      "name": "memgraph",
+      "source": {
+        "source": "local",
+        "path": "./memgraph"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "context-graph",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/memgraph/ai-toolkit.git",
+        "path": "./context-graph/plugins/memgraph-context-graph-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

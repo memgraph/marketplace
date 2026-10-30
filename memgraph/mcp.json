@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "memgraph-docs": {
+      "type": "streamable-http",
+      "url": "https://mcp-docs.memgraph.com"
+    },
+    "memgraph": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-memgraph==0.4.1"]
+    }
+  }
+}

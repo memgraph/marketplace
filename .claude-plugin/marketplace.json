@@ -1,0 +1,26 @@
+{
+  "name": "memgraph",
+  "owner": {
+    "name": "Memgraph",
+    "url": "https://memgraph.com"
+  },
+  "metadata": {
+    "description": "Memgraph plugins for AI coding agents."
+  },
+  "plugins": [
+    {
+      "name": "memgraph",
+      "source": "./memgraph",
+      "description": "Skills for building with Memgraph, plus the Memgraph docs and database MCP servers."
+    },
+    {
+      "name": "context-graph",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/memgraph/ai-toolkit.git",
+        "path": "context-graph/plugins/memgraph-context-graph-claude"
+      },
+      "description": "AI Memory: record Claude Code sessions into Memgraph Context Graph and recall them later. Needs the memgraph-context-graph CLI."
+    }
+  ]
+}
