@@ -1,4 +1,4 @@
-# Memgraph plugins
+# Memgraph plugin marketplace
 
 Catalogs of plugins that help AI coding agents build with [Memgraph](https://memgraph.com).
 This repository holds only the catalogs; each plugin lives in the repository where its code is.
@@ -18,8 +18,8 @@ This repository holds only the catalogs; each plugin lives in the repository whe
 
 | Agent | Command |
 | --- | --- |
-| Claude Code | `/plugin marketplace add memgraph/plugins`, then `/plugin install memgraph@memgraph` |
-| Codex | `codex plugin marketplace add memgraph/plugins`, then install `memgraph` from the plugin directory |
+| Claude Code | `/plugin marketplace add memgraph/marketplace`, then `/plugin install memgraph@memgraph` |
+| Codex | `codex plugin marketplace add memgraph/marketplace`, then install `memgraph` from the plugin directory |
 | Other agents (skills only) | `npx skills add memgraph/skills` |
 
 The Memgraph MCP server runs with `uvx`, so it needs [uv](https://docs.astral.sh/uv/).
