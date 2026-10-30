@@ -7,8 +7,10 @@
     {
       "name": "memgraph",
       "source": {
-        "source": "local",
-        "path": "./memgraph"
+        "source": "git-subdir",
+        "url": "https://github.com/memgraph/skills.git",
+        "path": "./",
+        "ref": "poc/plugins-catalog"
       },
       "policy": {
         "installation": "AVAILABLE",
