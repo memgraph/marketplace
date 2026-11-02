@@ -22,7 +22,7 @@ This repository holds only the catalogs; each plugin lives in the repository whe
 | Codex | `codex plugin marketplace add memgraph/marketplace`, then install `memgraph` from the plugin directory |
 | Other agents (skills only) | `npx skills add memgraph/skills` |
 
-Then, with Docker running, ask your agent *Get started with Memgraph* to run the `memgraph-start` onboarding (or call it directly: `/memgraph:memgraph-start` in Claude Code, `$memgraph-start` in Codex). In Codex, start it with `codex -a on-request` so the agent can ask to run Docker outside its sandbox.
+Then, with Docker running, ask your agent *Get started with Memgraph* to run the `memgraph-start` onboarding (or call it directly: `/memgraph:memgraph-start` in Claude Code, `$memgraph-start` in Codex). In Codex, start it with `codex -a on-request` so the agent can ask to run Docker outside its sandbox. To be asked less, answer the first `docker` and `curl` prompts with **Yes, and don't ask again for commands that start with …**, or choose **Approve for me** in `/permissions`, where Codex's reviewer approves low-risk commands for you.
 
 The Memgraph MCP server runs with `uvx`, so it needs [uv](https://docs.astral.sh/uv/).
 It connects to `bolt://localhost:7687` unless you set `MEMGRAPH_URL`.
