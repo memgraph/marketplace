@@ -12,8 +12,7 @@
       "name": "memgraph",
       "source": {
         "source": "github",
-        "repo": "memgraph/skills",
-        "ref": "poc/plugins-catalog"
+        "repo": "memgraph/skills"
       },
       "description": "Skills for building with Memgraph, plus the Memgraph docs and database MCP servers."
     },
