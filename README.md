@@ -96,4 +96,4 @@ code is, so report issues and send changes there.
 
 ## License
 
-[MIT](LICENSE)
+[Apache 2.0](LICENSE)
