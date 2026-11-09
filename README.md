@@ -1,8 +1,14 @@
 # Memgraph plugins for coding agents
 
-Build with [Memgraph](https://memgraph.com) from your coding agent. One install gives
-Claude Code or Codex the Memgraph skills, a search over the Memgraph docs, and access
-to your Memgraph database.
+Plugins that help Claude Code and Codex work with [Memgraph](https://memgraph.com).
+Install either one, or both:
+
+- **`memgraph`** builds with Memgraph: the Memgraph skills, a search over the Memgraph
+  docs, and access to your Memgraph database.
+- **`context-graph`** gives your agent AI Memory: it records its sessions in Memgraph
+  and recalls them in later sessions.
+
+To start with `memgraph`:
 
 ```
 /plugin marketplace add memgraph/marketplace
@@ -15,15 +21,15 @@ Then, with Docker running, ask your agent:
 Get started with Memgraph
 ```
 
-It starts Memgraph and Memgraph Lab in Docker, loads a sample dataset you pick, and runs
-a first query and a graph algorithm, in about a minute.
+It starts Memgraph and Memgraph Lab in Docker, loads a sample dataset you pick, runs a
+first query and a graph algorithm in about a minute, and offers to set up AI Memory.
 
 ## Plugins
 
 | Plugin | What it adds | Source |
 | --- | --- | --- |
-| `memgraph` | Skills for Cypher, data modeling, importing data, indexes, configuration, MAGE algorithms, query modules, mgconsole and GraphRAG, plus the `memgraph-start` onboarding. The [Memgraph docs MCP server](https://memgraph.com/docs/getting-started/coding-with-ai/docs-mcp), so the agent looks things up instead of answering from memory. The [Memgraph MCP server](https://memgraph.com/docs/ai-ecosystem/integrations/mcp), so it can read your schema and run queries (read-only by default). | [memgraph/skills](https://github.com/memgraph/skills) |
-| `context-graph` | AI Memory: records your agent sessions in Memgraph and recalls them in later sessions. Optional and separate, so nothing is recorded unless you install it. | [memgraph/ai-toolkit](https://github.com/memgraph/ai-toolkit/tree/main/context-graph) |
+| `memgraph` | Skills for Cypher, data modeling, importing data, indexes, configuration, MAGE algorithms, query modules, mgconsole and GraphRAG, plus the `memgraph-start` onboarding, which also offers to set up AI Memory. The [Memgraph docs MCP server](https://memgraph.com/docs/getting-started/coding-with-ai/docs-mcp), so the agent looks things up instead of answering from memory. The [Memgraph MCP server](https://memgraph.com/docs/ai-ecosystem/integrations/mcp), so it can read your schema and run queries (read-only by default). | [memgraph/skills](https://github.com/memgraph/skills) |
+| `context-graph` | AI Memory: records your agent sessions in Memgraph and recalls them in later sessions. Nothing is recorded unless you install it. | [memgraph/ai-toolkit](https://github.com/memgraph/ai-toolkit/tree/main/context-graph) |
 
 ## Install
 
