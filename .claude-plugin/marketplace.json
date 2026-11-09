@@ -23,7 +23,7 @@
         "url": "https://github.com/memgraph/ai-toolkit.git",
         "path": "context-graph/plugins/memgraph-context-graph-claude"
       },
-      "description": "AI Memory: record Claude Code sessions into Memgraph Context Graph and recall them later. Needs the memgraph-context-graph CLI."
+      "description": "AI Memory: record Claude Code sessions into Memgraph Context Graph and recall them later. Needs the memgraph-context-graph tool: run the AI Memory setup, https://memgraph.com/docs/ai-ecosystem/ai-memory/get-started"
     }
   ]
 }
