@@ -26,6 +26,11 @@ first query and a graph algorithm in about a minute, and offers to set up AI Mem
 
 ## Plugins
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/memgraph-marketplace-dark.svg">
+  <img src="assets/memgraph-marketplace.svg" alt="Claude Code or Codex adds the Memgraph marketplace, which has two plugins. memgraph adds Agent Skills, the docs MCP server, the Memgraph MCP server and the memgraph-start onboarding. context-graph adds AI Memory. Install either one, or both." width="700">
+</picture>
+
 | Plugin | What it adds | Source |
 | --- | --- | --- |
 | `memgraph` | Skills for Cypher, data modeling, importing data, indexes, configuration, MAGE algorithms, query modules, mgconsole and GraphRAG, plus the `memgraph-start` onboarding, which also offers to set up AI Memory. The [Memgraph docs MCP server](https://memgraph.com/docs/getting-started/coding-with-ai/docs-mcp), so the agent looks things up instead of answering from memory. The [Memgraph MCP server](https://memgraph.com/docs/ai-ecosystem/integrations/mcp), so it can read your schema and run queries (read-only by default). | [memgraph/skills](https://github.com/memgraph/skills) |
